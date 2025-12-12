@@ -39,7 +39,11 @@ are mapped with 0 giving 0V output and 4095 giving 5V output. HOWEVER, the catch
 is that if you are running the I/O voltage domain at (say) 3.3V, the values will 
 still map to the entire range but the part of the range above 3.3V will never be 
 reached. If you write a value of 2703 you will receive the maximum 3.3V output, 
-and any values above that will still only give 3.3V output.
+and any values above that will still only give 3.3V output. This example shows 
+the voltage output with 3.3V supply voltage, 2.5V internal VREF, 1x multiplier, 
+and output values of 0-4095:
+
+![Scope capture showing voltage rising to 3.3V then capped](images/vref-capped.png)
 
 The implication of this is if you want to run the AD5593R at 3.3V I/O and 
 achieve full-scale DAC output, you need to either:
