@@ -1,7 +1,5 @@
 # AD5593R Python Library
 
-Copyright 2025 SuperHouse Automation Pty Ltd [www.superhouse.tv](https://www.superhouse.tv)
-
 This is a Python port of the C++ Arduino library by Rob Tillaart. If you want 
 to use the AD5593R with Arduino, check out Rob's excellent library at 
 [github.com/RobTillaart/AD5593R](https://github.com/RobTillaart/AD5593R).
